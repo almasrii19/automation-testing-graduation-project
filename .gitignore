@@ -1,0 +1,31 @@
+# Selenium / Maven build output
+target/
+
+# Allure raw results (only the generated allure-report is committed)
+allure-results/
+
+# Execution logs
+logs/
+*.log
+
+# Keep the verified evidence log
+!evidence/execution.log
+
+# IDE and OS files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.DS_Store
+Thumbs.db
+
+# Local environment overrides and credentials
+.env
+*.env
+secrets.properties
+config.local.properties
+
+# Assignment brief (kept locally, not part of the published project)
+Automation_Testing_Project_OrangeHRM.docx.pdf

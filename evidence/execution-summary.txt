@@ -1,0 +1,44 @@
+OrangeHRM Automation Suite - Final Execution Evidence
+=====================================================
+
+Execution date : 2026-11-16
+Command        : mvn -B clean test
+Environment    : Windows 11, Java 26.0.2.1, Google Chrome (headless), Maven 3.9.11
+Execution mode : TestNG parallel="tests", thread-count=2
+Browser driver : Selenium Manager (Chrome 157)
+
+Result
+------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+Surefire suite time: 51.22 s
+Total Maven build time: 53.304 s
+Build status: BUILD SUCCESS
+
+Allure result
+-------------
+Passed: 11
+Failed: 0
+Broken: 0
+Skipped: 0
+Total: 11
+
+Per-test execution times (from logs/automation.log)
+---------------------------------------------------
+TC01 loginWithValidCredentials ........ 3,945 ms
+TC02 loginWithInvalidCredentials ...... 3,563 ms
+TC03 loginWithEmptyFields ............. 3,397 ms
+TC04 searchForExistingEmployee ........ 8,463 ms
+TC05 searchForNonExistingEmployee ..... 7,015 ms
+TC06 openAddEmployeePage .............. 7,578 ms
+TC07 addEmployeeWithEmptyFirstName .... 8,334 ms
+TC08 addEmployeeEndToEnd .............. 16,267 ms
+TC09 verifyAddUserPage ................ 9,480 ms
+TC10 verifyFooterBrandingLink ......... 8,812 ms
+TC11 verifySidebarMenu ................ 4,968 ms
+
+Evidence files
+--------------
+- execution.log                 : Log4j2 execution log from this run
+- allure-summary.json           : Allure statistics from the generated report
+- screenshots/                  : Key UI screenshots captured during this run
+- ../allure-report/index.html   : Full static Allure HTML report

@@ -1,0 +1,28 @@
+{
+  "scenarios": [
+    {
+      "scenario": "valid",
+      "username": "Admin",
+      "password": "admin123",
+      "expectedUrlFragment": "/dashboard/index",
+      "expectedMessage": "Dashboard",
+      "description": "Login with the valid OrangeHRM demo administrator credentials"
+    },
+    {
+      "scenario": "invalid",
+      "username": "InvalidUser_QA",
+      "password": "WrongPassword_123",
+      "expectedUrlFragment": "/auth/login",
+      "expectedMessage": "Invalid credentials",
+      "description": "Login with an invalid username and password"
+    },
+    {
+      "scenario": "empty",
+      "username": "",
+      "password": "",
+      "expectedUrlFragment": "/auth/login",
+      "expectedMessage": "Required",
+      "description": "Submit the login form with both fields empty"
+    }
+  ]
+}

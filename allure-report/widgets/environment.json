@@ -1,0 +1,1 @@
+[{"values":["chrome"],"name":"Browser"},{"values":["https://opensource-demo.orangehrmlive.com/web/index.php"],"name":"Base.URL"},{"values":["true"],"name":"Headless"},{"values":["15s"],"name":"Explicit.Wait"},{"values":["Windows 11 10.0"],"name":"Operating.System"},{"values":["26.0.2.1"],"name":"Java.Version"},{"values":["tests (thread-count=2)"],"name":"Parallel.Mode"}]

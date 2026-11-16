@@ -1,0 +1,14 @@
+{
+  "existingEmployee": {
+    "firstName": "Amelia",
+    "lastName": "Brown"
+  },
+  "nonExistingEmployee": {
+    "firstName": "ZzNoSuch",
+    "lastName": "Employee"
+  },
+  "newEmployee": {
+    "firstName": "AutoQA",
+    "lastName": "Automation"
+  }
+}
