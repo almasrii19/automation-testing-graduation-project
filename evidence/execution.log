@@ -1,202 +1,202 @@
-2026-11-16 20:53:43.963 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Starting TestNG suite: OrangeHRM Automation Suite
-2026-11-16 20:53:43.963 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - Starting TestNG suite: OrangeHRM Automation Suite
-2026-11-16 20:53:43.965 [TestNG-tests-1] INFO  com.orangehrm.config.ConfigReader - Loaded configuration from config.properties
-2026-11-16 20:53:44.025 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: loginWithEmptyFields
-2026-11-16 20:53:44.025 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: addEmployeeEndToEnd
-2026-11-16 20:53:44.666 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
-2026-11-16 20:53:44.666 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
-2026-11-16 20:53:44.722 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: loginWithEmptyFields [thread=TestNG-tests-1]
-2026-11-16 20:53:44.722 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: addEmployeeEndToEnd [thread=TestNG-tests-2]
-2026-11-16 20:53:44.724 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:53:44.724 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:53:46.855 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:53:47.275 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:53:47.389 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:53:47.441 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:53:47.492 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:53:47.535 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:53:47.811 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:53:48.101 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Required_validation_messages_20261116-205348-099_52.png
-2026-11-16 20:53:48.103 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: loginWithEmptyFields (3397 ms)
-2026-11-16 20:53:48.190 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\loginWithEmptyFields_-_PASSED_20261116-205348-190_52.png
-2026-11-16 20:53:48.301 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
-2026-11-16 20:53:48.306 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: loginWithInvalidCredentials
-2026-11-16 20:53:48.937 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
-2026-11-16 20:53:48.937 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
-2026-11-16 20:53:49.762 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
-2026-11-16 20:53:50.581 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
-2026-11-16 20:53:50.586 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: loginWithInvalidCredentials [thread=TestNG-tests-1]
-2026-11-16 20:53:50.586 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:53:50.813 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Opening PIM > Add Employee
-2026-11-16 20:53:50.813 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //a[normalize-space()='Add Employee']
-2026-11-16 20:53:51.125 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Waiting for URL to contain: /pim/addEmployee
-2026-11-16 20:53:51.669 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Typing 'AutoQA' into: By.name: firstName
-2026-11-16 20:53:51.730 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Typing 'Automation822100' into: By.name: lastName
-2026-11-16 20:53:51.797 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:53:51.851 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Waiting for URL to contain: /pim/viewPersonalDetails
-2026-11-16 20:53:52.355 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:53:52.880 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'InvalidUser_QA' into: By.name: username
-2026-11-16 20:53:52.927 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:53:52.973 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:53:54.144 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Invalid_credentials_error_20261116-205354-143_52.png
-2026-11-16 20:53:54.146 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: loginWithInvalidCredentials (3563 ms)
-2026-11-16 20:53:54.225 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\loginWithInvalidCredentials_-_PASSED_20261116-205354-225_52.png
-2026-11-16 20:53:54.344 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
-2026-11-16 20:53:54.346 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: loginWithValidCredentials
-2026-11-16 20:53:54.661 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
-2026-11-16 20:53:54.666 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: loginWithValidCredentials [thread=TestNG-tests-1]
-2026-11-16 20:53:54.667 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:53:56.357 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:53:56.807 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'AutoQA' from: By.name: firstName
-2026-11-16 20:53:56.814 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'Automation822100' from: By.name: lastName
-2026-11-16 20:53:56.839 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'AutoQA' from: By.name: firstName
-2026-11-16 20:53:56.846 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'Automation822100' from: By.name: lastName
-2026-11-16 20:53:56.887 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:53:56.920 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\New_employee_Personal_Details_20261116-205356-920_53.png
-2026-11-16 20:53:56.922 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Returning to PIM > Employee List from Personal Details
-2026-11-16 20:53:56.922 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
-2026-11-16 20:53:56.929 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:53:56.976 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:53:57.016 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:53:57.593 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
-2026-11-16 20:53:58.580 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Dashboard_after_valid_login_20261116-205358-579_52.png
-2026-11-16 20:53:58.607 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: loginWithValidCredentials (3945 ms)
-2026-11-16 20:53:58.650 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Typing 'AutoQA Automation822100' into: By.cssSelector: input[placeholder='Type for hints...']
-2026-11-16 20:53:58.715 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //div[contains(@class,'oxd-autocomplete-option')][normalize-space()='AutoQA Automation822100']
-2026-11-16 20:53:58.728 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\loginWithValidCredentials_-_PASSED_20261116-205358-727_52.png
-2026-11-16 20:53:58.801 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
-2026-11-16 20:53:58.802 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Suite 'OrangeHRM Automation Suite' finished - passed=3, failed=0, skipped=0
-2026-11-16 20:53:58.823 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Starting TestNG suite: OrangeHRM Automation Suite
-2026-11-16 20:53:58.825 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: verifyAddUserPage
-2026-11-16 20:53:59.166 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
-2026-11-16 20:53:59.169 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: verifyAddUserPage [thread=TestNG-tests-1]
-2026-11-16 20:53:59.171 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:00.309 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //button[@type='submit' and normalize-space()='Search']
-2026-11-16 20:54:00.971 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\New_employee_in_search_results_20261116-205400-970_53.png
-2026-11-16 20:54:00.972 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: addEmployeeEndToEnd (16267 ms)
-2026-11-16 20:54:01.037 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\addEmployeeEndToEnd_-_PASSED_20261116-205401-036_53.png
-2026-11-16 20:54:01.154 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
-2026-11-16 20:54:01.157 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: addEmployeeWithEmptyFirstName
-2026-11-16 20:54:01.466 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
-2026-11-16 20:54:01.468 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: addEmployeeWithEmptyFirstName [thread=TestNG-tests-2]
-2026-11-16 20:54:01.469 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:02.723 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:03.270 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:03.315 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:03.370 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:03.408 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:03.630 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:04.158 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:04.204 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:04.264 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:04.312 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:04.720 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Navigating to Admin > User Management
-2026-11-16 20:54:04.721 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='admin/viewAdminModule']
-2026-11-16 20:54:05.499 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Waiting for URL to contain: /admin/viewSystemUsers
-2026-11-16 20:54:05.775 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
-2026-11-16 20:54:05.775 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
-2026-11-16 20:54:06.043 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Opening User Management > Users
-2026-11-16 20:54:06.043 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Clicking element: By.xpath: //span[contains(@class,'oxd-topbar-body-nav-tab-item')][normalize-space()='User Management']
-2026-11-16 20:54:06.118 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Clicking element: By.xpath: //ul[contains(@class,'oxd-dropdown-menu')]//a[normalize-space()='Users']
-2026-11-16 20:54:06.566 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
-2026-11-16 20:54:06.963 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Waiting for URL to contain: /admin/viewSystemUsers
-2026-11-16 20:54:07.501 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Clicking element: By.xpath: //button[normalize-space()='Add']
-2026-11-16 20:54:07.634 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Opening PIM > Add Employee
-2026-11-16 20:54:07.634 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //a[normalize-space()='Add Employee']
-2026-11-16 20:54:07.828 [TestNG-tests-1] INFO  com.orangehrm.pages.AddUserPage - Waiting for URL to contain: /admin/saveSystemUser
-2026-11-16 20:54:07.985 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Waiting for URL to contain: /pim/addEmployee
-2026-11-16 20:54:08.519 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Typing 'Automation' into: By.name: lastName
-2026-11-16 20:54:08.591 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:08.646 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Admin_Add_User_form_20261116-205408-645_52.png
-2026-11-16 20:54:08.647 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: verifyAddUserPage (9480 ms)
-2026-11-16 20:54:08.739 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\verifyAddUserPage_-_PASSED_20261116-205408-739_52.png
-2026-11-16 20:54:08.841 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
-2026-11-16 20:54:08.843 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: verifyFooterBrandingLink
-2026-11-16 20:54:09.216 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
-2026-11-16 20:54:09.220 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: verifyFooterBrandingLink [thread=TestNG-tests-1]
-2026-11-16 20:54:09.220 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:09.800 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\First_Name_Required_validation_20261116-205409-799_53.png
-2026-11-16 20:54:09.801 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: addEmployeeWithEmptyFirstName (8334 ms)
-2026-11-16 20:54:09.891 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\addEmployeeWithEmptyFirstName_-_PASSED_20261116-205409-890_53.png
-2026-11-16 20:54:10.029 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
-2026-11-16 20:54:10.031 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: openAddEmployeePage
-2026-11-16 20:54:10.348 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
-2026-11-16 20:54:10.351 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: openAddEmployeePage [thread=TestNG-tests-2]
-2026-11-16 20:54:10.351 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:10.913 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:11.435 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:11.482 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:11.530 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:11.573 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:12.314 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:12.842 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:12.901 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:12.958 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:12.994 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:13.201 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\OrangeHRM_footer_branding_20261116-205413-201_52.png
-2026-11-16 20:54:14.405 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
-2026-11-16 20:54:14.405 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
-2026-11-16 20:54:15.160 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
-2026-11-16 20:54:16.217 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Opening PIM > Add Employee
-2026-11-16 20:54:16.217 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //a[normalize-space()='Add Employee']
-2026-11-16 20:54:16.778 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Waiting for URL to contain: /pim/addEmployee
-2026-11-16 20:54:17.927 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Add_Employee_page_20261116-205417-926_53.png
-2026-11-16 20:54:17.928 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: openAddEmployeePage (7578 ms)
-2026-11-16 20:54:17.959 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\OrangeHRM_website_in_a_new_tab_20261116-205417-958_52.png
-2026-11-16 20:54:18.021 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\openAddEmployeePage_-_PASSED_20261116-205418-019_53.png
-2026-11-16 20:54:18.031 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: verifyFooterBrandingLink (8812 ms)
-2026-11-16 20:54:18.132 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\verifyFooterBrandingLink_-_PASSED_20261116-205418-130_52.png
-2026-11-16 20:54:18.149 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
-2026-11-16 20:54:18.151 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: searchForExistingEmployee
-2026-11-16 20:54:18.258 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
-2026-11-16 20:54:18.259 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: verifySidebarMenu
-2026-11-16 20:54:18.518 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
-2026-11-16 20:54:18.522 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: searchForExistingEmployee [thread=TestNG-tests-2]
-2026-11-16 20:54:18.523 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:18.623 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
-2026-11-16 20:54:18.626 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: verifySidebarMenu [thread=TestNG-tests-1]
-2026-11-16 20:54:18.627 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:20.712 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:21.231 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:21.277 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:21.278 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:21.330 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:21.808 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:21.872 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:21.924 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:21.964 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:22.136 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:22.676 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
-2026-11-16 20:54:22.676 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
-2026-11-16 20:54:23.537 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
-2026-11-16 20:54:23.590 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\OrangeHRM_sidebar_menu_20261116-205423-590_52.png
-2026-11-16 20:54:23.592 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: verifySidebarMenu (4968 ms)
-2026-11-16 20:54:23.715 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\verifySidebarMenu_-_PASSED_20261116-205423-714_52.png
-2026-11-16 20:54:23.796 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
-2026-11-16 20:54:23.797 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Suite 'OrangeHRM Automation Suite' finished - passed=3, failed=0, skipped=0
-2026-11-16 20:54:24.596 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Typing 'Amelia Brown' into: By.cssSelector: input[placeholder='Type for hints...']
-2026-11-16 20:54:24.666 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //div[contains(@class,'oxd-autocomplete-option')][normalize-space()='Amelia Brown']
-2026-11-16 20:54:26.264 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //button[@type='submit' and normalize-space()='Search']
-2026-11-16 20:54:26.982 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Existing_employee_search_result_20261116-205426-981_53.png
-2026-11-16 20:54:26.983 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: searchForExistingEmployee (8463 ms)
-2026-11-16 20:54:27.072 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\searchForExistingEmployee_-_PASSED_20261116-205427-071_53.png
-2026-11-16 20:54:27.156 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
-2026-11-16 20:54:27.158 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: searchForNonExistingEmployee
-2026-11-16 20:54:27.477 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
-2026-11-16 20:54:27.480 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: searchForNonExistingEmployee [thread=TestNG-tests-2]
-2026-11-16 20:54:27.481 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2026-11-16 20:54:29.141 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
-2026-11-16 20:54:29.671 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
-2026-11-16 20:54:29.709 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
-2026-11-16 20:54:29.745 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
-2026-11-16 20:54:29.775 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
-2026-11-16 20:54:31.061 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
-2026-11-16 20:54:31.061 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
-2026-11-16 20:54:31.706 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
-2026-11-16 20:54:32.767 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Typing 'ZzNoSuchEmployee729400' into: By.cssSelector: input[placeholder='Type for hints...']
-2026-11-16 20:54:34.440 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\No_Records_Found_message_20261116-205434-440_53.png
-2026-11-16 20:54:34.442 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //button[@type='submit' and normalize-space()='Search']
-2026-11-16 20:54:34.493 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: searchForNonExistingEmployee (7015 ms)
-2026-11-16 20:54:34.583 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\searchForNonExistingEmployee_-_PASSED_20261116-205434-582_53.png
-2026-11-16 20:54:34.671 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
-2026-11-16 20:54:34.672 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - Suite 'OrangeHRM Automation Suite' finished - passed=5, failed=0, skipped=0
+2026-11-19 17:13:59.749 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - Starting TestNG suite: OrangeHRM Automation Suite
+2026-11-19 17:13:59.749 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Starting TestNG suite: OrangeHRM Automation Suite
+2026-11-19 17:13:59.752 [TestNG-tests-2] INFO  com.orangehrm.config.ConfigReader - Loaded configuration from config.properties
+2026-11-19 17:13:59.807 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: loginWithEmptyFields
+2026-11-19 17:13:59.807 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: addEmployeeEndToEnd
+2026-11-19 17:14:00.445 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
+2026-11-19 17:14:00.445 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
+2026-11-19 17:14:00.500 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: loginWithEmptyFields [thread=TestNG-tests-1]
+2026-11-19 17:14:00.500 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: addEmployeeEndToEnd [thread=TestNG-tests-2]
+2026-11-19 17:14:00.503 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:00.503 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:02.947 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:02.973 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:03.487 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:03.509 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:03.577 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:03.656 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:03.786 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Required_validation_messages_20261119-171403-784_53.png
+2026-11-19 17:14:03.790 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: loginWithEmptyFields (3304 ms)
+2026-11-19 17:14:03.848 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\loginWithEmptyFields_-_PASSED_20261119-171403-847_53.png
+2026-11-19 17:14:03.978 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
+2026-11-19 17:14:03.981 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: loginWithInvalidCredentials
+2026-11-19 17:14:04.316 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
+2026-11-19 17:14:04.320 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: loginWithInvalidCredentials [thread=TestNG-tests-1]
+2026-11-19 17:14:04.321 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:04.542 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:05.115 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
+2026-11-19 17:14:05.115 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
+2026-11-19 17:14:06.012 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
+2026-11-19 17:14:06.342 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:07.390 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'InvalidUser_QA' into: By.name: username
+2026-11-19 17:14:07.448 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:07.526 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:07.593 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Opening PIM > Add Employee
+2026-11-19 17:14:07.593 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //a[normalize-space()='Add Employee']
+2026-11-19 17:14:08.192 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Waiting for URL to contain: /pim/addEmployee
+2026-11-19 17:14:09.785 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Typing 'AutoQA' into: By.name: firstName
+2026-11-19 17:14:09.862 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Typing 'Automation453100' into: By.name: lastName
+2026-11-19 17:14:09.946 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:09.954 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Invalid_credentials_error_20261119-171409-953_53.png
+2026-11-19 17:14:09.956 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: loginWithInvalidCredentials (5639 ms)
+2026-11-19 17:14:10.001 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Waiting for URL to contain: /pim/viewPersonalDetails
+2026-11-19 17:14:10.039 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\loginWithInvalidCredentials_-_PASSED_20261119-171410-038_53.png
+2026-11-19 17:14:10.138 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
+2026-11-19 17:14:10.140 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: loginWithValidCredentials
+2026-11-19 17:14:10.463 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
+2026-11-19 17:14:10.467 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: loginWithValidCredentials [thread=TestNG-tests-1]
+2026-11-19 17:14:10.468 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:12.488 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:13.017 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:13.061 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:13.105 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:13.144 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:14.767 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Dashboard_after_valid_login_20261119-171414-767_53.png
+2026-11-19 17:14:14.808 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: loginWithValidCredentials (4343 ms)
+2026-11-19 17:14:14.927 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\loginWithValidCredentials_-_PASSED_20261119-171414-926_53.png
+2026-11-19 17:14:15.046 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
+2026-11-19 17:14:15.048 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Suite 'OrangeHRM Automation Suite' finished - passed=3, failed=0, skipped=0
+2026-11-19 17:14:15.074 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Starting TestNG suite: OrangeHRM Automation Suite
+2026-11-19 17:14:15.075 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: verifyAddUserPage
+2026-11-19 17:14:15.148 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'AutoQA' from: By.name: firstName
+2026-11-19 17:14:15.157 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'Automation453100' from: By.name: lastName
+2026-11-19 17:14:15.186 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'AutoQA' from: By.name: firstName
+2026-11-19 17:14:15.196 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Read input value 'Automation453100' from: By.name: lastName
+2026-11-19 17:14:15.343 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\New_employee_Personal_Details_20261119-171415-343_54.png
+2026-11-19 17:14:15.345 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Returning to PIM > Employee List from Personal Details
+2026-11-19 17:14:15.346 [TestNG-tests-2] INFO  com.orangehrm.pages.PersonalDetailsPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
+2026-11-19 17:14:15.384 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
+2026-11-19 17:14:15.387 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: verifyAddUserPage [thread=TestNG-tests-1]
+2026-11-19 17:14:15.388 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:16.200 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
+2026-11-19 17:14:17.783 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Typing 'AutoQA Automation453100' into: By.cssSelector: input[placeholder='Type for hints...']
+2026-11-19 17:14:17.830 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //div[contains(@class,'oxd-autocomplete-option')][normalize-space()='AutoQA Automation453100']
+2026-11-19 17:14:19.060 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:19.429 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //button[@type='submit' and normalize-space()='Search']
+2026-11-19 17:14:19.604 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:19.669 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:19.731 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:19.772 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:20.133 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\New_employee_in_search_results_20261119-171420-131_54.png
+2026-11-19 17:14:20.134 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: addEmployeeEndToEnd (19649 ms)
+2026-11-19 17:14:20.237 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\addEmployeeEndToEnd_-_PASSED_20261119-171420-237_54.png
+2026-11-19 17:14:20.343 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
+2026-11-19 17:14:20.344 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: addEmployeeWithEmptyFirstName
+2026-11-19 17:14:20.651 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
+2026-11-19 17:14:20.655 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: addEmployeeWithEmptyFirstName [thread=TestNG-tests-2]
+2026-11-19 17:14:20.656 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:21.219 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Navigating to Admin > User Management
+2026-11-19 17:14:21.219 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='admin/viewAdminModule']
+2026-11-19 17:14:21.955 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Waiting for URL to contain: /admin/viewSystemUsers
+2026-11-19 17:14:22.567 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Opening User Management > Users
+2026-11-19 17:14:22.567 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Clicking element: By.xpath: //span[contains(@class,'oxd-topbar-body-nav-tab-item')][normalize-space()='User Management']
+2026-11-19 17:14:22.633 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Clicking element: By.xpath: //ul[contains(@class,'oxd-dropdown-menu')]//a[normalize-space()='Users']
+2026-11-19 17:14:22.637 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:23.173 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:23.215 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:23.260 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:23.295 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:23.840 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Waiting for URL to contain: /admin/viewSystemUsers
+2026-11-19 17:14:24.376 [TestNG-tests-1] INFO  com.orangehrm.pages.SystemUsersPage - Clicking element: By.xpath: //button[normalize-space()='Add']
+2026-11-19 17:14:24.688 [TestNG-tests-1] INFO  com.orangehrm.pages.AddUserPage - Waiting for URL to contain: /admin/saveSystemUser
+2026-11-19 17:14:24.959 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
+2026-11-19 17:14:24.959 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
+2026-11-19 17:14:25.607 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Admin_Add_User_form_20261119-171425-607_53.png
+2026-11-19 17:14:25.608 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: verifyAddUserPage (10223 ms)
+2026-11-19 17:14:25.687 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\verifyAddUserPage_-_PASSED_20261119-171425-686_53.png
+2026-11-19 17:14:25.770 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
+2026-11-19 17:14:25.772 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: verifyFooterBrandingLink
+2026-11-19 17:14:26.108 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
+2026-11-19 17:14:26.112 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: verifyFooterBrandingLink [thread=TestNG-tests-1]
+2026-11-19 17:14:26.112 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:26.589 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
+2026-11-19 17:14:27.648 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Opening PIM > Add Employee
+2026-11-19 17:14:27.648 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //a[normalize-space()='Add Employee']
+2026-11-19 17:14:27.980 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Waiting for URL to contain: /pim/addEmployee
+2026-11-19 17:14:28.076 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:28.601 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:28.638 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:28.681 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:28.712 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:29.052 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Typing 'Automation' into: By.name: lastName
+2026-11-19 17:14:29.127 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:30.308 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\First_Name_Required_validation_20261119-171430-307_54.png
+2026-11-19 17:14:30.308 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: addEmployeeWithEmptyFirstName (9655 ms)
+2026-11-19 17:14:30.339 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\OrangeHRM_footer_branding_20261119-171430-338_53.png
+2026-11-19 17:14:30.383 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\addEmployeeWithEmptyFirstName_-_PASSED_20261119-171430-382_54.png
+2026-11-19 17:14:30.503 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
+2026-11-19 17:14:30.505 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: openAddEmployeePage
+2026-11-19 17:14:30.841 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
+2026-11-19 17:14:30.843 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: openAddEmployeePage [thread=TestNG-tests-2]
+2026-11-19 17:14:30.844 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:32.776 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:33.298 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:33.338 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:33.382 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:33.416 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:35.556 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\OrangeHRM_website_in_a_new_tab_20261119-171435-555_53.png
+2026-11-19 17:14:35.629 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: verifyFooterBrandingLink (9520 ms)
+2026-11-19 17:14:35.699 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
+2026-11-19 17:14:35.699 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
+2026-11-19 17:14:35.738 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\verifyFooterBrandingLink_-_PASSED_20261119-171435-737_53.png
+2026-11-19 17:14:35.826 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
+2026-11-19 17:14:35.827 [TestNG-tests-1] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: verifySidebarMenu
+2026-11-19 17:14:36.157 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-1' (headless=true)
+2026-11-19 17:14:36.161 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: verifySidebarMenu [thread=TestNG-tests-1]
+2026-11-19 17:14:36.161 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:36.616 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
+2026-11-19 17:14:38.273 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:38.706 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Opening PIM > Add Employee
+2026-11-19 17:14:38.706 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //a[normalize-space()='Add Employee']
+2026-11-19 17:14:39.045 [TestNG-tests-2] INFO  com.orangehrm.pages.AddEmployeePage - Waiting for URL to contain: /pim/addEmployee
+2026-11-19 17:14:39.314 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:39.391 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:39.454 [TestNG-tests-1] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:39.489 [TestNG-tests-1] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:40.220 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Add_Employee_page_20261119-171440-220_54.png
+2026-11-19 17:14:40.221 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: openAddEmployeePage (9379 ms)
+2026-11-19 17:14:40.309 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\openAddEmployeePage_-_PASSED_20261119-171440-309_54.png
+2026-11-19 17:14:40.398 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
+2026-11-19 17:14:40.400 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: searchForExistingEmployee
+2026-11-19 17:14:40.700 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
+2026-11-19 17:14:40.704 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: searchForExistingEmployee [thread=TestNG-tests-2]
+2026-11-19 17:14:40.704 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:41.094 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\OrangeHRM_sidebar_menu_20261119-171441-093_53.png
+2026-11-19 17:14:41.096 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: verifySidebarMenu (4938 ms)
+2026-11-19 17:14:41.250 [TestNG-tests-1] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\verifySidebarMenu_-_PASSED_20261119-171441-250_53.png
+2026-11-19 17:14:41.364 [TestNG-tests-1] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-1'
+2026-11-19 17:14:41.365 [TestNG-tests-1] INFO  com.orangehrm.listeners.TestListener - Suite 'OrangeHRM Automation Suite' finished - passed=3, failed=0, skipped=0
+2026-11-19 17:14:42.390 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:43.434 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:43.484 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:43.535 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:43.583 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:46.333 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
+2026-11-19 17:14:46.334 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
+2026-11-19 17:14:49.096 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
+2026-11-19 17:14:50.183 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Typing 'Amelia Brown' into: By.cssSelector: input[placeholder='Type for hints...']
+2026-11-19 17:14:50.239 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //div[contains(@class,'oxd-autocomplete-option')][normalize-space()='Amelia Brown']
+2026-11-19 17:14:52.332 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //button[@type='submit' and normalize-space()='Search']
+2026-11-19 17:14:53.535 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\Existing_employee_search_result_20261119-171453-534_54.png
+2026-11-19 17:14:53.536 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: searchForExistingEmployee (12834 ms)
+2026-11-19 17:14:53.606 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\searchForExistingEmployee_-_PASSED_20261119-171453-605_54.png
+2026-11-19 17:14:53.715 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
+2026-11-19 17:14:53.717 [TestNG-tests-2] INFO  com.orangehrm.tests.BaseTest - Preparing browser for test: searchForNonExistingEmployee
+2026-11-19 17:14:54.011 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome started on thread 'TestNG-tests-2' (headless=true)
+2026-11-19 17:14:54.015 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST STARTED: searchForNonExistingEmployee [thread=TestNG-tests-2]
+2026-11-19 17:14:54.016 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Opening OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-11-19 17:14:56.122 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Waiting for URL to contain: /auth/login
+2026-11-19 17:14:56.652 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing 'Admin' into: By.name: username
+2026-11-19 17:14:56.688 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Typing [REDACTED] into: By.name: password
+2026-11-19 17:14:56.730 [TestNG-tests-2] INFO  com.orangehrm.pages.LoginPage - Clicking element: By.cssSelector: button[type='submit']
+2026-11-19 17:14:56.764 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Waiting for URL to contain: /dashboard/index
+2026-11-19 17:14:58.968 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Navigating to PIM > Employee List
+2026-11-19 17:14:58.968 [TestNG-tests-2] INFO  com.orangehrm.pages.DashboardPage - Clicking element: By.cssSelector: a[href*='pim/viewPimModule']
+2026-11-19 17:14:59.887 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Waiting for URL to contain: /pim/viewEmployeeList
+2026-11-19 17:15:01.445 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Typing 'ZzNoSuchEmployee391300' into: By.cssSelector: input[placeholder='Type for hints...']
+2026-11-19 17:15:01.507 [TestNG-tests-2] INFO  com.orangehrm.pages.PimEmployeeListPage - Clicking element: By.xpath: //button[@type='submit' and normalize-space()='Search']
+2026-11-19 17:15:02.713 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\No_Records_Found_search_results_20261119-171502-712_54.png
+2026-11-19 17:15:02.714 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - TEST PASSED: searchForNonExistingEmployee (8700 ms)
+2026-11-19 17:15:02.808 [TestNG-tests-2] INFO  com.orangehrm.utils.ScreenshotUtils - Screenshot saved: D:\Graduation route assignment\target\screenshots\searchForNonExistingEmployee_-_PASSED_20261119-171502-808_54.png
+2026-11-19 17:15:02.923 [TestNG-tests-2] INFO  com.orangehrm.driver.DriverManager - Chrome closed on thread 'TestNG-tests-2'
+2026-11-19 17:15:02.924 [TestNG-tests-2] INFO  com.orangehrm.listeners.TestListener - Suite 'OrangeHRM Automation Suite' finished - passed=5, failed=0, skipped=0

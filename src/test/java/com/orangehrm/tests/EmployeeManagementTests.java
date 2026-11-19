@@ -59,7 +59,7 @@ public class EmployeeManagementTests extends BaseTest {
     )
     @Story("Employee search - negative")
     @Severity(SeverityLevel.NORMAL)
-    @Description("Verify that a random non-existing name produces the 'No Records Found' message.")
+    @Description("Verify that searching for a random non-existing name displays 'No Records Found' in the Employee List results.")
     public void searchForNonExistingEmployee(EmployeeData employee) {
         DashboardPage dashboard = loginAsAdmin();
         PimEmployeeListPage pimPage = Allure.step("Navigate to PIM > Employee List",
@@ -69,20 +69,19 @@ public class EmployeeManagementTests extends BaseTest {
         Allure.step("Enter a random non-existing employee name: " + randomName,
                 () -> pimPage.enterEmployeeName(randomName));
 
-        Allure.step("Verify the 'No Records Found' message is displayed", () -> {
-            Assert.assertTrue(pimPage.isNoRecordsFoundMessageDisplayed(),
-                    "OrangeHRM should display 'No Records Found' for the random name: " + randomName);
-            ScreenshotUtils.captureAndAttach("No Records Found message");
-        });
-
         Allure.step("Click Search", pimPage::clickSearch);
 
-        Allure.step("Verify the random name is not present in the results", () -> {
+        Allure.step("Verify the search results show 'No Records Found'", () -> {
+            Assert.assertTrue(pimPage.waitForNoRecordsFoundInResults(),
+                    "The search results should display 'No Records Found' for: " + randomName);
+
             List<String> rows = pimPage.getResultRows();
-            Assert.assertTrue(rows.stream().noneMatch(row -> row.contains(randomName)),
-                    "A non-existing employee must not appear in the results table");
+            Assert.assertTrue(rows.isEmpty(),
+                    "No employee rows should be shown for a non-existing employee. Rows: " + rows);
             Assert.assertTrue(pimPage.getCurrentUrl().contains("/pim/viewEmployeeList"),
                     "The user should remain on the Employee List page");
+
+            ScreenshotUtils.captureAndAttach("No Records Found search results");
         });
     }
 

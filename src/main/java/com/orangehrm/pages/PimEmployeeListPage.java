@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
@@ -19,6 +20,10 @@ public class PimEmployeeListPage extends BasePage {
     private static final By ADD_EMPLOYEE_LINK = By.xpath("//a[normalize-space()='Add Employee']");
     private static final By TABLE_ROWS = By.cssSelector(".oxd-table-body .oxd-table-row");
     private static final By RECORDS_FOUND = By.xpath("//span[contains(normalize-space(),'Record') and contains(normalize-space(),'Found')]");
+    private static final By NO_RECORDS_FOUND_IN_RESULTS = By.xpath(
+            "//div[contains(@class,'orangehrm-paper-container')]"
+                    + "//span[normalize-space()='No Records Found']"
+    );
 
     public PimEmployeeListPage(WebDriver driver) {
         super(driver);
@@ -101,15 +106,18 @@ public class PimEmployeeListPage extends BasePage {
     }
 
     /**
-     * The OrangeHRM 5.9 name field is an autocomplete: a non-existent value produces
-     * the "No Records Found" message in its suggestion panel. The test intentionally
-     * asserts that visible UI message before submitting Search.
+     * Waits for the post-search empty state in the results area. The Employee Name
+     * autocomplete can also show "No Records Found"; this locator is scoped to the
+     * results container, so it only matches after the Search request has completed.
      */
-    public boolean isNoRecordsFoundMessageDisplayed() {
-        By noRecords = By.xpath(
-                "//div[contains(@class,'oxd-autocomplete-option')][normalize-space()='No Records Found']"
-        );
-        return isDisplayed(noRecords);
+    public boolean waitForNoRecordsFoundInResults() {
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(NO_RECORDS_FOUND_IN_RESULTS));
+            return true;
+        } catch (TimeoutException exception) {
+            log.warn("'No Records Found' was not displayed in the Employee List results");
+            return false;
+        }
     }
 
     public boolean hasAutocompleteOptions() {

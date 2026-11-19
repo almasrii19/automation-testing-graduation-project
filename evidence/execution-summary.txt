@@ -1,7 +1,7 @@
 OrangeHRM Automation Suite - Final Execution Evidence
 =====================================================
 
-Execution date : 2026-11-16
+Execution date : 2026-11-19
 Command        : mvn -B clean test
 Environment    : Windows 11, Java 26.0.2.1, Google Chrome (headless), Maven 3.9.11
 Execution mode : TestNG parallel="tests", thread-count=2
@@ -10,8 +10,8 @@ Browser driver : Selenium Manager (Chrome 157)
 Result
 ------
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
-Surefire suite time: 51.22 s
-Total Maven build time: 53.304 s
+Surefire suite time: 63.70 s
+Total Maven build time: 1 min 5 s
 Build status: BUILD SUCCESS
 
 Allure result
@@ -24,17 +24,25 @@ Total: 11
 
 Per-test execution times (from logs/automation.log)
 ---------------------------------------------------
-TC01 loginWithValidCredentials ........ 3,945 ms
-TC02 loginWithInvalidCredentials ...... 3,563 ms
-TC03 loginWithEmptyFields ............. 3,397 ms
-TC04 searchForExistingEmployee ........ 8,463 ms
-TC05 searchForNonExistingEmployee ..... 7,015 ms
-TC06 openAddEmployeePage .............. 7,578 ms
-TC07 addEmployeeWithEmptyFirstName .... 8,334 ms
-TC08 addEmployeeEndToEnd .............. 16,267 ms
-TC09 verifyAddUserPage ................ 9,480 ms
-TC10 verifyFooterBrandingLink ......... 8,812 ms
-TC11 verifySidebarMenu ................ 4,968 ms
+TC01 loginWithValidCredentials ........ 4,343 ms
+TC02 loginWithInvalidCredentials ...... 5,639 ms
+TC03 loginWithEmptyFields ............. 3,304 ms
+TC04 searchForExistingEmployee ........ 12,834 ms
+TC05 searchForNonExistingEmployee ..... 8,700 ms
+TC06 openAddEmployeePage .............. 9,379 ms
+TC07 addEmployeeWithEmptyFirstName .... 9,655 ms
+TC08 addEmployeeEndToEnd .............. 19,649 ms
+TC09 verifyAddUserPage ................ 10,223 ms
+TC10 verifyFooterBrandingLink ......... 9,520 ms
+TC11 verifySidebarMenu ................ 4,938 ms
+
+TC05 verification detail
+------------------------
+The Search button was clicked before the final assertion. The test then waited
+for the results container and verified:
+- the results area displays "No Records Found";
+- the results table contains no employee rows;
+- the browser remains on /pim/viewEmployeeList.
 
 Evidence files
 --------------

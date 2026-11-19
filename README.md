@@ -2,7 +2,7 @@
 
 End-to-end test automation for the [OrangeHRM Open Source Demo](https://opensource-demo.orangehrmlive.com/) built with **Java, Selenium WebDriver, TestNG, and the Page Object Model**. The suite covers the 11 required graduation-project scenarios, runs the TestNG classes in parallel, and publishes Allure reports with screenshots and environment details.
 
-**Final verification (16 Nov 2026):** `Tests run: 11, Failures: 0, Errors: 0, Skipped: 0` — **BUILD SUCCESS**.
+**Final verification (19 Nov 2026):** `Tests run: 11, Failures: 0, Errors: 0, Skipped: 0` — **BUILD SUCCESS**.
 
 ---
 
@@ -105,7 +105,7 @@ All 11 scenarios passed in the final parallel run. Evidence screenshots are link
 | TC02 | Login with invalid credentials | `LoginTests.loginWithInvalidCredentials` | `Invalid credentials` alert is shown and the user stays on the login page | **Passed** — alert text and `/auth/login` URL verified | [Screenshot](evidence/screenshots/TC02_login_invalid_credentials_error.png) |
 | TC03 | Login with empty fields | `LoginTests.loginWithEmptyFields` | Two `Required` validation messages appear, one per field | **Passed** — both messages and their field association verified | [Screenshot](evidence/screenshots/TC03_login_empty_required_validation.png) |
 | TC04 | Search for an existing employee | `EmployeeManagementTests.searchForExistingEmployee` | Known employee appears in the PIM results table | **Passed** — `Amelia Brown` found in the results table | [Screenshot](evidence/screenshots/TC04_existing_employee_search_result.png) |
-| TC05 | Search for a non-existing employee | `EmployeeManagementTests.searchForNonExistingEmployee` | No matching employee is returned | **Passed** — `No Records Found` shown; random name absent after Search | [Screenshot](evidence/screenshots/TC05_non_existing_employee_no_records.png) |
+| TC05 | Search for a non-existing employee | `EmployeeManagementTests.searchForNonExistingEmployee` | After Search, `No Records Found` is displayed and no employee rows are returned | **Passed** — `No Records Found` shown in the results area after Search; zero result rows | [Screenshot](evidence/screenshots/TC05_non_existing_employee_no_records.png) |
 | TC06 | Open the Add Employee page | `EmployeeManagementTests.openAddEmployeePage` | `/pim/addEmployee` opens with First Name and Last Name fields | **Passed** — URL and both fields verified | [Screenshot](evidence/screenshots/TC06_add_employee_page.png) |
 | TC07 | Add employee with First Name empty | `EmployeeManagementTests.addEmployeeWithEmptyFirstName` | `Required` validation appears under First Name; employee is not created | **Passed** — validation message shown, URL remains on Add Employee | [Screenshot](evidence/screenshots/TC07_add_employee_first_name_required.png) |
 | TC08 | End-to-end add employee | `EmployeeManagementTests.addEmployeeEndToEnd` | Employee is created, Personal Details match, and the employee appears in Employee List | **Passed** — unique employee created, details matched, search result verified | [Personal Details](evidence/screenshots/TC08_new_employee_personal_details.png), [Search result](evidence/screenshots/TC08_new_employee_search_result.png) |
@@ -115,12 +115,15 @@ All 11 scenarios passed in the final parallel run. Evidence screenshots are link
 
 ### Note on TC05 (actual OrangeHRM 5.9 behavior)
 
-OrangeHRM 5.9 shows the **`No Records Found`** message inside the Employee Name autocomplete while typing an unknown name, before the Search button is clicked. The test reflects the real UI behavior:
+OrangeHRM 5.9 also shows a **`No Records Found`** hint inside the Employee Name autocomplete while typing an unknown name, before Search is clicked. The test does not use that hint as its final assertion; it follows the assignment workflow:
 
 1. Enters a randomly generated non-existing name.
-2. Asserts that `No Records Found` is visible and captures a screenshot.
-3. Clicks **Search**.
-4. Verifies that the random name does not appear in the results table and that the user remains on `/pim/viewEmployeeList`.
+2. Clicks **Search**.
+3. Explicitly waits for the post-search results area to display **`No Records Found`**.
+4. Verifies that the results table has no employee rows and that the browser remains on `/pim/viewEmployeeList`.
+5. Captures the post-search screenshot.
+
+The page-object locator is scoped to the results container (`.orangehrm-paper-container`), so the autocomplete option cannot satisfy the assertion. This ensures the message is validated only after the search operation completes.
 
 ---
 
@@ -258,7 +261,7 @@ Logs and screenshots are regenerated on every run. `allure-results/` and `logs/`
 
 | Metric | Value |
 |---|---|
-| Execution date | 16 November 2026 |
+| Execution date | 19 November 2026 |
 | Command | `mvn -B clean test` |
 | Environment | Windows 11, Java 26.0.2.1, Chrome 157 (headless), Maven 3.9.11 |
 | Execution mode | TestNG `parallel="tests"`, `thread-count="2"` |
@@ -267,8 +270,8 @@ Logs and screenshots are regenerated on every run. `allure-results/` and `logs/`
 | Failed | **0** |
 | Errors | **0** |
 | Skipped | **0** |
-| Surefire suite time | **51.22 s** |
-| Total Maven build time | **53.304 s** |
+| Surefire suite time | **63.70 s** |
+| Total Maven build time | **1 min 5 s** |
 | Build status | **BUILD SUCCESS** |
 | Retries triggered | 0 |
 | Allure report | **11 passed, 0 failed, 0 broken, 0 skipped** |
